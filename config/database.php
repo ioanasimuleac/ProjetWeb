@@ -18,7 +18,7 @@ return [
     | you may use many connections at once using the Database library.
     |
     */
-    'fetch' => PDO::fetch_class,
+    'fetch' => PDO::FETCH_CLASS,
 
     'default' => env('DATABASE_URL', 'pgsql'),
 
