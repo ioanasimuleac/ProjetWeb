@@ -41,17 +41,17 @@ return [
     'connections' => [
 
         'pgsql' => [
-        'driver'    => 'mysql',
-        'host'      => env('DB_HOST', 'ec2-79-125-117-53.eu-west-1.compute.amazonaws.com'),
-        'database'  => env('DB_DATABASE', 'df37eqr9a7ckit'),
-        'username'  => env('DB_USERNAME', 'tixvhtndhkvsae'),
-        'password'  => env('DB_PASSWORD', '9890c80a20528a1af5f4045b1435e26bd02a9fcf3060ae8616fc06033ed8ee67'),
-        'charset'   => 'utf8',
-        'collation' => 'utf8_unicode_ci',
-        'prefix'    => 'test_',
-        'strict'    => false,
-    ],
-
+            'driver' => 'pgsql',
+            'host' => env('DB_HOST','ec2-79-125-117-53.eu-west-1.compute.amazonaws.com'),
+            'port' => env('DB_PORT', '5432'),
+            'database' => env('DB_DATABASE','df37eqr9a7ckit'),
+            'username' => env('DB_USERNAME', 'tixvhtndhkvsae'),
+            'password' => env('DB_PASSWORD', '9890c80a20528a1af5f4045b1435e26bd02a9fcf3060ae8616fc06033ed8ee67'),
+            'charset' => 'utf8',
+            'prefix' => '',
+            'schema' => 'public',
+            'sslmode' => 'require',
+        ],
     ],
 
     /*
