@@ -30,31 +30,32 @@
             <br>
         </div>
             <!-- Navigation -->
-            <nav class="navbar navbar-default">
-                  <div class="container-fluid">
-                    <div class="navbar-header">
-                      <a class="navbar-brand"  href = {{action('HomeController@index')}}>RomSilva</a>
-                    </div>
-                    <ul class="nav navbar-nav">
-                      <li><a href = {{action('Bois\BoisController@read')}}> Les offres</a></li>
-                      <li class= "active"><a href="#"> Les demandes </a></li>
-                      <li> <a href= {{action('EventsController@events')}}> Evenements </a></li>
-                    </ul>
-                    <ul class="nav navbar-nav navbar-right">
-                          @guest
-                            <li><a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a></li>
-                            <li><a class="nav-link" href="{{ route('register') }}">{{ __('Enregistrer') }}</a></li>
-                        @else
-                            <li><a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">  
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand"  href = {{action('HomeController@index')}}>RomSilva</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li><a href = {{action('Bois\BoisController@read')}}> Les offres</a></li>
+                    <li class= "active"><a href="#"> Les demandes </a></li>
+                    <li> <a href= {{action('EventsController@events')}}> Evenements </a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    @guest
+                        <li><a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a></li>
+                        <li><a class="nav-link" href="{{ route('register') }}">{{ __('Enregistrer') }}</a></li>
+                    @else
+                        <li><a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">  
                                 {{ __('Logout') }} </a></li>
-                            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                              @csrf
-                            </form>
-                        @endguest
-                    </ul>
-                  </div>
-                </nav>
+                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                  @csrf
+                        </form>
+                    @endguest
+                </ul>
             </div>
+        </nav>
+    </div>
+        
         <div class = "containter">
             <div id="page-wrapper">
                 <div class="row">
@@ -98,49 +99,46 @@
                         <!-- /.panel -->
                         </div>
                     </div>
-                    <div class = "col-lg-6">
-                        
-                    </div>
+                    <div class = "col-lg-6"></div>
                     <div class = "row">
-                        <div class = "col-lg-12">
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    Detailles
-                                </div>
-                                <!-- /.panel-heading -->
-                                <div class = "panel-body">
-                                    <div class="panel-body">
-                                        <div class="table-responsive">
-                                            <table class="table">
-                                                <thead>
+                    <div class = "col-lg-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                Detailles
+                            </div>
+                            <!-- /.panel-heading -->
+                            <div class = "panel-body">
+                                <div class="panel-body">
+                                    <div class="table-responsive">
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Nom entreprise</th>
+                                                    <th>Rue pour l'entreprise</th>
+                                                    <th>Code postale</th>
+                                                    <th>Nom Representant</th>
+                                                    <th>Prenom Representant</th>
+                                                    <th>Email</th>
+                                                    <th>telephone</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                @foreach($detalii as $de)
                                                     <tr>
-                                                        <th>Nom entreprise</th>
-                                                        <th>Rue pour l'entreprise</th>
-                                                        <th>Code postale</th>
-                                                        <th>Nom Representant</th>
-                                                        <th>Prenom Representant</th>
-                                                        <th>Email</th>
-                                                        <th>telephone</th>
+                                                        <td>{{$de->nomentreprise}}</td>
+                                                        <td>{{$de->rueentreprise}}</td>
+                                                        <td>{{$de->codeentreprise}}</td>
+                                                        <td>{{$de->nomrep}}</td>
+                                                        <td>{{$de->prenomrep}}</td>
+                                                        <td>{{$de->email}}</td>
+                                                        <td>{{$de->telephone}}</td>
                                                     </tr>
-                                                </thead>
-                                                <tbody>
-                                                    @foreach($detalii as $de)
-                                                        <tr>
-                                                            <td>{{$de->nomentreprise}}</td>
-                                                            <td>{{$de->rueentreprise}}</td>
-                                                            <td>{{$de->codeentreprise}}</td>
-                                                            <td>{{$de->nomrep}}</td>
-                                                            <td>{{$de->prenomrep}}</td>
-                                                            <td>{{$de->email}}</td>
-                                                            <td>{{$de->telephone}}</td>
-                                                        </tr>
-                                                    @endforeach
-                                                </tbody>
-                                            </table>
-                                        </div>
+                                                 @endforeach
+                                            </tbody>
+                                        </table>
                                     </div>
-                                    
-                                </div>
+                                </div>    
+                            </div>
                             <!-- /.panel -->
                             </div>
                         </div>

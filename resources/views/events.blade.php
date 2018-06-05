@@ -39,9 +39,9 @@
                       <a class="navbar-brand"  href = {{action('HomeController@index')}}>RomSilva</a>
                     </div>
                     <ul class="nav navbar-nav">
-                      <li class="active"><a href="#">Evenements</a></li>
                       <li><a  href= {{action('Bois\BoisController@read')}} >  Les offerts </a>
                       <li><a href ={{action('Demander\DemanderController@readAll')}} > Les demandes </a></li>
+                      <li class="active"><a href="#">Evenements</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                           @guest

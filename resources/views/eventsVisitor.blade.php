@@ -86,7 +86,7 @@
                                                 <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Transilvania Hunting & Fishing – TH&F</a>
                                             </h4>
                                         </div>
-                                        <div id="collapseTwo" class="panel-collapse collapse">
+                                        <div>
                                             <div class="panel-body">
                                                 <ins><a href="http://transilvaniahuntingandfishing.ro/">Pour visiter leur site d'acceuil, click ici.</a></ins> 
                                             </div>

@@ -138,7 +138,7 @@
                     </div>
                     <div class = "col-lg-4">
                         <figure>
-                            <img src="https://www.google.fr/search?biw=1536&bih=734&tbm=isch&sa=1&ei=oqgWW-7FBsSHmwWMn50g&q=padurea+romaniei+satelit&oq=padurea+romaniei+satelit&gs_l=img.3...6166.7894.0.8063.8.8.0.0.0.0.115.717.7j1.8.0....0...1c.1.64.img..0.0.0....0.CYf2aqLsQb4#imgrc=EW5S-TZEX1griM:" class ="img-responsive" alt="Une image avec le pays vue de satellite!">
+                            <img src="https://www.green-report.ro/wp-content/uploads/2016/12/Untitled-1.png" class ="img-responsive" alt="Une image avec le pays vue de satellite!">
                             <figcaption>Image satellitale (août 2002), la forêt apparaît (vert foncé) couvre en 2016 10 millions d’hectares soit 29% du territoire</figcaption>
                         </figure>
                     </div>
