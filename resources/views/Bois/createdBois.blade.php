@@ -11,19 +11,14 @@
 
     <title>RomSilva</title>
 
-    <!-- Bootstrap Core CSS -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- MetisMenu CSS -->
     <link href="../vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
     <link href="../dist/css/sb-admin-2.css" rel="stylesheet">
-
-    <!-- Morris Charts CSS -->
     <link href="../vendor/morrisjs/morris.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
     <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="../dist/css/style.css" rel="stylesheet">
     
@@ -95,23 +90,24 @@
             </div>
             <!-- /.navbar-static-side -->
         </nav>
-
-        <div id="page-wrapper">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2 class="page-header">Création d'une offre</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="loadertext">
-                            Offre créée avec succès ! Redirection en cours ...<br>
+        <div class="container">
+            <div id="page-wrapper">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2 class="page-header">Création d'une offre</h2>
                     </div>
-                    <img src="../img/loader.gif" alt="" class="loadergif">
-                    <script type="text/javascript">
-                        var obj = 'window.location.replace( "{{action('Bois\BoisController@read')}}");';
-                        setTimeout(obj,1000);
-                    </script>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="loadertext">
+                                Offre créée avec succès ! Redirection en cours ...<br>
+                        </div>
+                        <img src="../img/loader.gif" alt="" class="loadergif">
+                        <script type="text/javascript">
+                            var obj = 'window.location.replace( "{{action('Bois\BoisController@read')}}");';
+                            setTimeout(obj,1000);
+                        </script>
+                    </div>
                 </div>
             </div>
         </div>

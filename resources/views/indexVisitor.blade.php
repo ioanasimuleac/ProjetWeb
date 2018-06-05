@@ -15,20 +15,13 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    
     <link href="../dist/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="../dist/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- MetisMenu CSS -->
     <link href="../dist/metisMenu/metisMenu.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
     <link href="../dist/css/sb-admin-2.css" rel="stylesheet">
     <link href="../dist/css/style.css" rel="stylesheet">
-
-    <!-- Morris Charts CSS -->
     <link href="../dist/morrisjs/morris.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
     <link href="../dist/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
 </head>
@@ -175,7 +168,7 @@
                 </div>
                 <div class = "col-lg-4">
                     <figure>
-                        <img src="../img/romania.png" class ="img-responsive" alt="Une image avec le pays vue de satellite!">
+                        <img src="https://www.google.fr/search?biw=1536&bih=734&tbm=isch&sa=1&ei=oqgWW-7FBsSHmwWMn50g&q=padurea+romaniei+satelit&oq=padurea+romaniei+satelit&gs_l=img.3...6166.7894.0.8063.8.8.0.0.0.0.115.717.7j1.8.0....0...1c.1.64.img..0.0.0....0.CYf2aqLsQb4#imgrc=EW5S-TZEX1griM:" class ="img-responsive" alt="Une image avec le pays vue de satellite!">
                         <figcaption>Image satellitale (août 2002), la forêt apparaît (vert foncé) couvre en 2016 10 millions d’hectares soit 29% du territoire</figcaption>
                     </figure>
                 </div>

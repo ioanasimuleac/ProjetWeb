@@ -142,13 +142,13 @@
                 <div class="row">
                     <div class = "col-lg-6">
                         <figure>
-                            <img src="../img/huntingAndFishing.jpg" class ="img-responsive" class="img-thumbnail" alt="Cinque Terre" width="304" height="236" alt="TH&F Expozitie pentru vânătoare, pescuit sportiv si activităti outdoor de agrement si sporturi extreme.">
+                            <img src="https://www.google.fr/search?biw=1536&bih=734&tbm=isch&sa=1&ei=-akWW_tcxofoBN21l4AG&q=TH%26F+Expozitie+pentru+v%C3%A2n%C4%83toare%2C+pescuit+sportiv+si+activit%C4%83ti+outdoor+de+agrement+si+sporturi+extreme&oq=TH%26F+Expozitie+pentru+v%C3%A2n%C4%83toare%2C+pescuit+sportiv+si+activit%C4%83ti+outdoor+de+agrement+si+sporturi+extreme&gs_l=img.3..0i30k1l2j0i8i30k1l8.16116.16978.0.17435.2.2.0.0.0.0.112.112.0j1.1.0..1..0...1c.1.64.img..1.1.111....0.GEi1hzCZQFA#imgrc=dz2OZvPW3RLWnM:" class ="img-responsive" class="img-thumbnail" alt="Cinque Terre" width="304" height="236" alt="TH&F Expozitie pentru vânătoare, pescuit sportiv si activităti outdoor de agrement si sporturi extreme.">
                             <figcaption><strong>TH&F Exposition pour la chasse, la pêche sportive et pour les activités récréatives en plein air et pour les sports extrêmes.</strong></figcaption>
                         </figure>
                     </div>
                     <div class= "col-lg-6">
                         <figure>
-                            <img src="../img/internationalDayOFForest.jpg" class ="img-responsive" class="img-thumbnail" alt="Cinque Terre" width="304" height="236" alt="Thème 2018 : « Forêts et villes durables »">
+                            <img src="https://www.google.fr/search?biw=1536&bih=734&tbm=isch&sa=1&ei=q6gWW_r2BeWL6ATazqCIBQ&q=Th%C3%A8me+2018+%3A+%C2%AB+For%C3%AAts+et+villes+durables+%C2%BB&oq=Th%C3%A8me+2018+%3A+%C2%AB+For%C3%AAts+et+villes+durables+%C2%BB&gs_l=img.3...237142.238711.0.238890.4.3.1.0.0.0.102.190.1j1.2.0....0...1c.1.64.img..1.0.0.0...0.r_hbvj6C_Dk#imgrc=aDfcRS5t-0hgVM:" class ="img-responsive" class="img-thumbnail" alt="Cinque Terre" width="304" height="236" alt="Thème 2018 : « Forêts et villes durables »">
                             <figcaption><strong>Thème 2018 : « Forêts et villes durables »</strong></figcaption>
                         </figure>
                     </div>

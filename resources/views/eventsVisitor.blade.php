@@ -97,74 +97,64 @@
             <!-- /.navbar-static-side -->
         </nav>
 
-       <div id="page-wrapper">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1 class="page-header">Evenements</h1>
-                </div>
-                <!-- /.col-lg-12 -->
-                <div class = "row">
-                    <div class = "col-lg-12">
-                        <div class="panel-group" id="accordion">
-                            <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <h4 class="panel-title">
-                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">La journée internationale des forêts</a>
-                                        </h4>
-                                    </div>
-                                    <div id="collapseOne" class="panel-collapse collapse in">
-                                        <div class="panel-body">
-                                            <strong>La journée internationale des forêts</strong> qui a lieu la première fois <strong>le 21 mars</strong> 2013 a été établie par la résolution de <strong>l'Assemblée générale des Nations</strong> unies le 28 novembre 2012. Elle sera célébrée chaque année le 21 mars.
-                                            Cette journée est destinée à être l'une des plates-formes mondiales de premier plan dans le monde pour les personnes ayant un intérêt dans les forêts et le changement climatique pour partager leurs points de vue et travailler ensemble pour assurer que les forêts soient convenablement intégrées dans des stratégies de changement climatique et d'atténuation d'adaptations futures.
-                                            <a href = "http://www.un.org/fr/events/forestsday/"><ins>Pour visiter leur site d'acceuil, click ici.</ins></a>
-                                        </div>
-                                    </div>
-                                </div>
+        <div class ="container">
+           <div id="page-wrapper">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="page-header">Evenements</h1>
+                    </div>
+                    <!-- /.col-lg-12 -->
+                    <div class = "row">
+                        <div class = "col-lg-12">
+                            <div class="panel-group" id="accordion">
                                 <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <h4 class="panel-title">
-                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Transilvania Hunting & Fishing – TH&F</a>
-                                        </h4>
-                                    </div>
-                                    <div id="collapseTwo" class="panel-collapse collapse">
-                                        <div class="panel-body">
-                                            <ins>Pour visiter leur site d'acceuil, click <a href="http://transilvaniahuntingandfishing.ro/">ici</a>.</ins> 
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title">
+                                                La journée internationale des forêts
+                                            </h4>
+                                        </div>
+                                        <div>
+                                            <div class="panel-body">
+                                                <strong>La journée internationale des forêts</strong> qui a lieu la première fois <strong>le 21 mars</strong> 2013 a été établie par la résolution de <strong>l'Assemblée générale des Nations</strong> unies le 28 novembre 2012. Elle sera célébrée chaque année le 21 mars.
+                                                Cette journée est destinée à être l'une des plates-formes mondiales de premier plan dans le monde pour les personnes ayant un intérêt dans les forêts et le changement climatique pour partager leurs points de vue et travailler ensemble pour assurer que les forêts soient convenablement intégrées dans des stratégies de changement climatique et d'atténuation d'adaptations futures.
+                                                <a href = "http://www.un.org/fr/events/forestsday/"><ins>Pour visiter leur site d'acceuil, click ici.</ins></a>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <h4 class="panel-title">
-                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree"> Item #3</a>
-                                        </h4>
-                                    </div>
-                                    <div id="collapseThree" class="panel-collapse collapse">
-                                        <div class="panel-body">
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Transilvania Hunting & Fishing – TH&F</a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseTwo" class="panel-collapse collapse">
+                                            <div class="panel-body">
+                                                <ins><a href="http://transilvaniahuntingandfishing.ro/">Pour visiter leur site d'acceuil, click ici.</a></ins> 
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                         </div>
+                             </div>
+                        </div>
+                    </div>
+                <!-- /.row -->
+                <div class="row">
+                    <div class = "col-lg-6">
+                        <figure>
+                            <img src="https://www.google.fr/search?biw=1536&bih=734&tbm=isch&sa=1&ei=-akWW_tcxofoBN21l4AG&q=TH%26F+Expozitie+pentru+v%C3%A2n%C4%83toare%2C+pescuit+sportiv+si+activit%C4%83ti+outdoor+de+agrement+si+sporturi+extreme&oq=TH%26F+Expozitie+pentru+v%C3%A2n%C4%83toare%2C+pescuit+sportiv+si+activit%C4%83ti+outdoor+de+agrement+si+sporturi+extreme&gs_l=img.3..0i30k1l2j0i8i30k1l8.16116.16978.0.17435.2.2.0.0.0.0.112.112.0j1.1.0..1..0...1c.1.64.img..1.1.111....0.GEi1hzCZQFA#imgrc=dz2OZvPW3RLWnM:" class ="img-responsive" class="img-thumbnail" alt="Cinque Terre" width="304" height="236" alt="TH&F Expozitie pentru vânătoare, pescuit sportiv si activităti outdoor de agrement si sporturi extreme.">
+                            <figcaption><strong>TH&F Exposition pour la chasse, la pêche sportive et pour les activités récréatives en plein air et pour les sports extrêmes.</strong></figcaption>
+                        </figure>
+                    </div>
+                    <div class= "col-lg-6">
+                        <figure>
+                            <img src="https://www.google.fr/search?biw=1536&bih=734&tbm=isch&sa=1&ei=q6gWW_r2BeWL6ATazqCIBQ&q=Th%C3%A8me+2018+%3A+%C2%AB+For%C3%AAts+et+villes+durables+%C2%BB&oq=Th%C3%A8me+2018+%3A+%C2%AB+For%C3%AAts+et+villes+durables+%C2%BB&gs_l=img.3...237142.238711.0.238890.4.3.1.0.0.0.102.190.1j1.2.0....0...1c.1.64.img..1.0.0.0...0.r_hbvj6C_Dk#imgrc=aDfcRS5t-0hgVM:" class ="img-responsive" class="img-thumbnail" alt="Cinque Terre" width="304" height="236" alt="Thème 2018 : « Forêts et villes durables »">
+                            <figcaption><strong>Thème 2018 : « Forêts et villes durables »</strong></figcaption>
+                        </figure>
                     </div>
                 </div>
-            <!-- /.row -->
-            <div class="row">
-                <div class = "col-lg-6">
-                    <figure>
-                        <img src="../img/huntingAndFishing.jpg" class ="img-responsive" class="img-thumbnail" alt="Cinque Terre" width="304" height="236" alt="TH&F Expozitie pentru vânătoare, pescuit sportiv si activităti outdoor de agrement si sporturi extreme.">
-                        <figcaption><strong>TH&F Exposition pour la chasse, la pêche sportive et pour les activités récréatives en plein air et pour les sports extrêmes.</strong></figcaption>
-                    </figure>
-                </div>
-                <div class= "col-lg-6">
-                    <figure>
-                        <img src="../img/internationalDayOFForest.jpg" class ="img-responsive" class="img-thumbnail" alt="Cinque Terre" width="304" height="236" alt="Thème 2018 : « Forêts et villes durables »">
-                        <figcaption><strong>Thème 2018 : « Forêts et villes durables »</strong></figcaption>
-                    </figure>
-                </div>
+                <!-- /.row -->
             </div>
-            <!-- /.row -->
+            <!-- /#page-wrapper -->
         </div>
-        <!-- /#page-wrapper -->
     </div>
         <!-- /#page-wrapper -->
     </div>

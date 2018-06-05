@@ -11,6 +11,10 @@
 
     <title>RomSilva</title>
 
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
     <!-- Bootstrap Core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="../vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
@@ -87,112 +91,115 @@
             <!-- /.navbar-static-side -->
         </nav>
 
-        <div id="page-wrapper">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1 class="page-header">Les offres</h1>
-                </div>
-            </div>
-             <div class = "row">
-                <div class = "col-lg-8">
-                </div>
-                 <div class = "col-lg-4">
-                    <a href={{action('Bois\BoisController@create')}}  type="button" class="btn btn-primary btn-lg">Ajouter une offre</a>
 
-                </div>
-            </div>
-            <br>
-            <div class = "row">
-                <div class="col-lg-6">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            Bois de feu
-                        </div>
-                        <!-- /.panel-heading -->
-                        <div class="panel-body">
-                            <div class="table-responsive">
-                                <table class="table">
-                                    <thead>
-                                        <tr>
-                                            <th>Bois</th>
-                                            <th>Volume (m3)</th>
-                                            <th>Diametre (m)</th>
-                                            <th>Prix per unite(€)</th>
-                                            <th>Action</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        @foreach($foc as $lemn)
-                                        <tr>
-                                            <td>{{$lemn->nombois}}</td>
-                                            <td>{{$lemn->volum}}</td>
-                                            <td>{{$lemn->diametre}}</td>
-                                            <td>{{$lemn->prixunite}}</td>
-                                            <td>
-                                                 <a href={{action('Bois\BoisController@delete', ['id'=>$lemn->idbois] )}} title="Supprimer" type="button" class="btn btn-danger"  data-toggle="modal">
-                                                    <i class="fa fa-times" aria-hidden="true"></i>
-                                                </a>
-                                                <!--href = {{action('Bois\BoisController@update',['id'=>$lemn->idbois])}}-->
-                                                <a href = {{action('Bois\BoisController@update',['id'=>$lemn->idbois])}} title="Modifier" class="btn btn-warning">
-                                                    <i class="text-white fa fa-pencil-square-o" aria-hidden="true"></i>
-                                                </a>
-                                            </td>
-                                        </tr>
-                                        @endforeach
-                                    </tbody>
-                                </table>
-                            </div>
-                            <!-- /.table-responsive -->
-                        </div>
-                        <!-- /.panel-body -->
+        <div class = "container">
+            <div id="page-wrapper">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="page-header">Les offres</h1>
                     </div>
-                    <!-- /.panel -->
                 </div>
-                <div class="col-lg-6">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            Bois de travail
-                        </div>
-                        <!-- /.panel-heading -->
-                        <div class="panel-body">
-                            <div class="table-responsive">
-                                <table class="table">
-                                    <thead>
-                                        <tr>
-                                            <th>Bois</th>
-                                            <th>Volume (m3)</th>
-                                            <th>Diametre (m)</th>
-                                            <th>Prix per unite(€)</th>
-                                            <th>Action</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        @foreach($munca as $lemn)
-                                        <tr>
-                                            <!--<td>{{$lemn->idbois}}</td>-->
-                                            <td>{{$lemn->nombois}}</td>
-                                            <td>{{$lemn->volum}}</td>
-                                            <td>{{$lemn->diametre}}</td>
-                                            <td>{{$lemn->prixunite}}</td>
-                                            <td>
-                                                <a href={{action('Bois\BoisController@delete', ['id'=>$lemn->idbois] )}} title="Supprimer" type="button" class="btn btn-danger"  data-toggle="modal">
-                                                    <i class="fa fa-times" aria-hidden="true"></i>
-                                                </a>
-                                                <!--href = {{action('Bois\BoisController@update',['id'=>$lemn->idbois])}}-->
-                                                <a href = {{action('Bois\BoisController@update',['id'=>$lemn->idbois])}} title="Modifier" class="btn btn-warning">
-                                                    <i class="text-white fa fa-pencil-square-o" aria-hidden="true"></i>
-                                                </a>
-                                            </td>
-                                        </tr>
-                                        @endforeach
-                                    </tbody>
-                                </table>
-                            </div>
-                            <!-- /.table-responsive -->
-                        </div>
-                        <!-- /.panel-body -->
+                 <div class = "row">
+                    <div class = "col-lg-8">
                     </div>
-                    <!-- /.panel -->
+                     <div class = "col-lg-4">
+                        <a href={{action('Bois\BoisController@create')}}  type="button" class="btn btn-primary btn-lg">Ajouter une offre</a>
+
+                    </div>
+                </div>
+                <br>
+                <div class = "row">
+                    <div class="col-lg-6">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                Bois de feu
+                            </div>
+                            <!-- /.panel-heading -->
+                            <div class="panel-body">
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>Bois</th>
+                                                <th>Volume (m3)</th>
+                                                <th>Diametre (m)</th>
+                                                <th>Prix per unite(€)</th>
+                                                <th>Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            @foreach($foc as $lemn)
+                                            <tr>
+                                                <td>{{$lemn->nombois}}</td>
+                                                <td>{{$lemn->volum}}</td>
+                                                <td>{{$lemn->diametre}}</td>
+                                                <td>{{$lemn->prixunite}}</td>
+                                                <td>
+                                                     <a href={{action('Bois\BoisController@delete', ['id'=>$lemn->idbois] )}} title="Supprimer" type="button" class="btn btn-danger"  data-toggle="modal">
+                                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                                    </a>
+                                                    <!--href = {{action('Bois\BoisController@update',['id'=>$lemn->idbois])}}-->
+                                                    <a href = {{action('Bois\BoisController@update',['id'=>$lemn->idbois])}} title="Modifier" class="btn btn-warning">
+                                                        <i class="text-white fa fa-pencil-square-o" aria-hidden="true"></i>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            @endforeach
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!-- /.table-responsive -->
+                            </div>
+                            <!-- /.panel-body -->
+                        </div>
+                        <!-- /.panel -->
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                Bois de travail
+                            </div>
+                            <!-- /.panel-heading -->
+                            <div class="panel-body">
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>Bois</th>
+                                                <th>Volume (m3)</th>
+                                                <th>Diametre (m)</th>
+                                                <th>Prix per unite(€)</th>
+                                                <th>Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            @foreach($munca as $lemn)
+                                            <tr>
+                                                <!--<td>{{$lemn->idbois}}</td>-->
+                                                <td>{{$lemn->nombois}}</td>
+                                                <td>{{$lemn->volum}}</td>
+                                                <td>{{$lemn->diametre}}</td>
+                                                <td>{{$lemn->prixunite}}</td>
+                                                <td>
+                                                    <a href={{action('Bois\BoisController@delete', ['id'=>$lemn->idbois] )}} title="Supprimer" type="button" class="btn btn-danger"  data-toggle="modal">
+                                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                                    </a>
+                                                    <!--href = {{action('Bois\BoisController@update',['id'=>$lemn->idbois])}}-->
+                                                    <a href = {{action('Bois\BoisController@update',['id'=>$lemn->idbois])}} title="Modifier" class="btn btn-warning">
+                                                        <i class="text-white fa fa-pencil-square-o" aria-hidden="true"></i>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            @endforeach
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!-- /.table-responsive -->
+                            </div>
+                            <!-- /.panel-body -->
+                        </div>
+                        <!-- /.panel -->
+                    </div>
                 </div>
             </div>
         </div>
