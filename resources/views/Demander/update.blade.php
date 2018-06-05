@@ -86,98 +86,99 @@
             <!-- /.navbar-static-side -->
         </nav>
 
-        <div id="page-wrapper">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1 class="page-header">Modification d'une demande</h1>
+        <div class = "container">
+            <div id="page-wrapper">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="page-header">Modification d'une demande</h1>
+                    </div>
+                </div>
+                <div class = "row">
+                    <form method="POST" action ={{action('Demander\DemanderController@updated')}} role = form >
+                        <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                        <input type="hidden" name = "oldValueNomEntreprise" value ={{$entreprise[0]->nomentreprise}}>
+                        <div class = "col-lg-4">
+                            <div class = "panel panel-default">
+                                <div class="panel-heading">
+                                    Qui vous êtes?
+                                </div>
+                                <div class = "panel-body">
+                                    <div class = "form-group">
+                                        <label>Le nom d'entreprise</label>
+                                        <input class="form-control" name="nomEntreprise" value={{$entreprise[0]->nomentreprise}}>
+                                    </div>
+                                    <div class = "form-group">
+                                        <label>Ville</label>
+                                        <input class="form-control" name="villeEntreprise" value={{$entreprise[0]->villeentreprise}}>
+                                    </div>
+                                    <div class = "form-group">
+                                        <label>Rue</label>
+                                        <input class="form-control" name="rueEntreprise" value={{$entreprise[0]->rueentreprise}}>
+                                    </div>
+                                    <div class = "form-group">
+                                        <label>Code Postale</label>
+                                        <input class="form-control" name="codeEntreprise" value={{$entreprise[0]->codeentreprise}}>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class = "panel panel-default">
+                                <div class="panel-heading">
+                                    Le representant de votre entreprise
+                                </div>
+                                <div class = "panel-body">
+                                    <div class = "form-group">
+                                        <label>Le nom du representant</label>
+                                        <input class="form-control" name="nomRep" value={{$representant[0]->nomrep}}>
+                                    </div>
+                                    <div class = "form-group">
+                                        <label>Le prenom du representant</label>
+                                        <input class="form-control" name="prenomRep" value={{$representant[0]->prenomrep}}>
+                                    </div>
+                                    <div class = "form-group">
+                                        <label>Email</label>
+                                        <input class="form-control" name="emailRep" value={{$representant[0]->email}}>
+                                    </div>
+                                    <div class = "form-group">
+                                        <label>Téléphone</label>
+                                        <input class="form-control" name="telephoneRep" value={{$representant[0]->telephone}}>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class = "col-lg-4">
+                            <div class = "panel panel-default">
+                                <div class="panel-heading">
+                                    La demande
+                                </div>
+                                <div class = "panel-body">
+                                    <div class="form-group">
+                                        <label>Le type de bois</label>
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" name="typeBois" id="optionsRadios1" value="bois de feu" checked>Bois de feu
+                                            </label>
+                                        </div>
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" name="typeBois" id="optionsRadios2" value="bois de travail">Bois de travail
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class = "form-group">
+                                        <label>La quantité de bois (le volum de vois desiré, en metre cube)</label>
+                                        <input class="form-control" name="quantite" value={{$demander[0]->quantite}}>
+                                    </div>
+                                    <button type="submit" class="btn btn-success center-block">Modifier</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
-            <div class = "row">
-                <form method="POST" action ={{action('Demander\DemanderController@updated')}} role = form >
-                    <input type="hidden" name="_token" value="{{ csrf_token() }}">
-                    <input type="hidden" name = "oldValueNomEntreprise" value ={{$entreprise[0]->nomentreprise}}>
-                    <div class = "col-lg-4">
-                        <div class = "panel panel-default">
-                            <div class="panel-heading">
-                                Qui vous êtes?
-                            </div>
-                            <div class = "panel-body">
-                                <div class = "form-group">
-                                    <label>Le nom d'entreprise</label>
-                                    <input class="form-control" name="nomEntreprise" value={{$entreprise[0]->nomentreprise}}>
-                                </div>
-                                <div class = "form-group">
-                                    <label>Ville</label>
-                                    <input class="form-control" name="villeEntreprise" value={{$entreprise[0]->villeentreprise}}>
-                                </div>
-                                <div class = "form-group">
-                                    <label>Rue</label>
-                                    <input class="form-control" name="rueEntreprise" value={{$entreprise[0]->rueentreprise}}>
-                                </div>
-                                <div class = "form-group">
-                                    <label>Code Postale</label>
-                                    <input class="form-control" name="codeEntreprise" value={{$entreprise[0]->codeentreprise}}>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class = "panel panel-default">
-                            <div class="panel-heading">
-                                Le representant de votre entreprise
-                            </div>
-                            <div class = "panel-body">
-                                <div class = "form-group">
-                                    <label>Le nom du representant</label>
-                                    <input class="form-control" name="nomRep" value={{$representant[0]->nomrep}}>
-                                </div>
-                                <div class = "form-group">
-                                    <label>Le prenom du representant</label>
-                                    <input class="form-control" name="prenomRep" value={{$representant[0]->prenomrep}}>
-                                </div>
-                                <div class = "form-group">
-                                    <label>Email</label>
-                                    <input class="form-control" name="emailRep" value={{$representant[0]->email}}>
-                                </div>
-                                <div class = "form-group">
-                                    <label>Téléphone</label>
-                                    <input class="form-control" name="telephoneRep" value={{$representant[0]->telephone}}>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class = "col-lg-4">
-                        <div class = "panel panel-default">
-                            <div class="panel-heading">
-                                La demande
-                            </div>
-                            <div class = "panel-body">
-                                <div class="form-group">
-                                    <label>Le type de bois</label>
-                                    <div class="radio">
-                                        <label>
-                                            <input type="radio" name="typeBois" id="optionsRadios1" value="bois de feu" checked>Bois de feu
-                                        </label>
-                                    </div>
-                                    <div class="radio">
-                                        <label>
-                                            <input type="radio" name="typeBois" id="optionsRadios2" value="bois de travail">Bois de travail
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class = "form-group">
-                                    <label>La quantité de bois (le volum de vois desiré, en metre cube)</label>
-                                    <input class="form-control" name="quantite" value={{$demander[0]->quantite}}>
-                                </div>
-                                <button type="submit" class="btn btn-success center-block">Modifier</button>
-                            </div>
-                        </div>
-                    </div>
-                </form>
-            </div>
+            <!-- /#page-wrapper -->
         </div>
-        <!-- /#page-wrapper -->
-
     </div>
     <!-- /#wrapper -->
 

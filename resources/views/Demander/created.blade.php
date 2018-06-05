@@ -93,74 +93,76 @@
             <!-- /.navbar-static-side -->
         </nav>
 
-        <div id="page-wrapper">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2 class="page-header">Votre demande</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="loadertext">
-                            Votre demande est formé par: <br>
+        <div class = "container">
+            <div id="page-wrapper">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2 class="page-header">Votre demande</h2>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class = "col-lg-12">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                           Votre demande
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="loadertext">
+                                Votre demande est formé par: <br>
                         </div>
-                        <div class="panel-body">
-                            <div class="table-responsive">
-                                <table class="table">
-                                    <thead>
-                                        <tr>
-                                            <th>Nom d'entreprise</th>
-                                            <th>Ville</th>
-                                            <th>Rue</th>
-                                            <th>Code postale</th>
-                                            <th>Nom represetant</th>
-                                            <th>Prenom represetant</th>
-                                            <th>Email represetant</th>
-                                            <th>Telephone represetant</th>
-                                            <th>Quantité</th>
-                                            <th>Type désiré</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>{{$afisaj[4] }}</td>
-                                            <td>{{$afisaj[6] }}</td>
-                                            <td>{{$afisaj[5] }}</td>
-                                            <td>{{$afisaj[7] }}</td>
-                                            <td>{{$afisaj[0] }}</td>
-                                            <td>{{$afisaj[1] }}</td>
-                                            <td>{{$afisaj[2] }}</td>
-                                            <td>{{$afisaj[3] }}</td>
-                                            <td>{{$afisaj[9] }}</td>
-                                            <td>{{$afisaj[8] }}</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class = "col-lg-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                               Votre demande
                             </div>
-                            <!-- /.table-responsive -->
+                            <div class="panel-body">
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>Nom d'entreprise</th>
+                                                <th>Ville</th>
+                                                <th>Rue</th>
+                                                <th>Code postale</th>
+                                                <th>Nom represetant</th>
+                                                <th>Prenom represetant</th>
+                                                <th>Email represetant</th>
+                                                <th>Telephone represetant</th>
+                                                <th>Quantité</th>
+                                                <th>Type désiré</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>{{$afisaj[4] }}</td>
+                                                <td>{{$afisaj[6] }}</td>
+                                                <td>{{$afisaj[5] }}</td>
+                                                <td>{{$afisaj[7] }}</td>
+                                                <td>{{$afisaj[0] }}</td>
+                                                <td>{{$afisaj[1] }}</td>
+                                                <td>{{$afisaj[2] }}</td>
+                                                <td>{{$afisaj[3] }}</td>
+                                                <td>{{$afisaj[9] }}</td>
+                                                <td>{{$afisaj[8] }}</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!-- /.table-responsive -->
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class = "row">
-                <!--  -->
-                <a href={{action('Demander\DemanderController@delete', ['id'=>$afisaj[4]])}} title="Supprimer" type="button" class="btn btn-danger"  data-toggle="modal">
-                    Supprimer
-                </a>
-                <a href = {{action('Demander\DemanderController@update',['id'=>$afisaj[4]])}} title="Modifier" class="btn btn-warning">
-                    Modifier
-                </a>
-                <a href = {{action('Bois\BoisController@readVisitor',['id'=>$afisaj[4]])}} title="Modifier" class="btn btn-primary">
-                    OK
-                </a>
+                <div class = "row">
+                    <!--  -->
+                    <a href={{action('Demander\DemanderController@delete', ['id'=>$afisaj[4]])}} title="Supprimer" type="button" class="btn btn-danger"  data-toggle="modal">
+                        Supprimer
+                    </a>
+                    <a href = {{action('Demander\DemanderController@update',['id'=>$afisaj[4]])}} title="Modifier" class="btn btn-warning">
+                        Modifier
+                    </a>
+                    <a href = {{action('Bois\BoisController@readVisitor',['id'=>$afisaj[4]])}} title="Modifier" class="btn btn-primary">
+                        OK
+                    </a>
+                </div>
             </div>
         </div>
         <!-- /#page-wrapper -->

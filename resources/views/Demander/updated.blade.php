@@ -91,22 +91,24 @@
             <!-- /.navbar-static-side -->
         </nav>
 
-        <div id="page-wrapper">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2 class="page-header">Modification d'une demande</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="loadertext">
-                            Demande modifiée avec succès ! Redirection en cours ...<br>
+        <div class = "container">
+            <div id="page-wrapper">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2 class="page-header">Modification d'une demande</h2>
                     </div>
-                    <img src="../img/loader.gif" alt="" class="loadergif">
-                    <script type="text/javascript">
-                        var obj = 'window.location.replace( "{{action('Bois\BoisController@readVisitor')}}");';
-                        setTimeout(obj,1000);
-                    </script>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="loadertext">
+                                Demande modifiée avec succès ! Redirection en cours ...<br>
+                        </div>
+                        <img src="../img/loader.gif" alt="" class="loadergif">
+                        <script type="text/javascript">
+                            var obj = 'window.location.replace( "{{action('Bois\BoisController@readVisitor')}}");';
+                            setTimeout(obj,1000);
+                        </script>
+                    </div>
                 </div>
             </div>
         </div>

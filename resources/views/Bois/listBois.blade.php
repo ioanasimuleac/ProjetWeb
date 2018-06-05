@@ -135,11 +135,11 @@
                                                 <td>{{$lemn->diametre}}</td>
                                                 <td>{{$lemn->prixunite}}</td>
                                                 <td>
-                                                     <a href={{action('Bois\BoisController@delete', ['id'=>$lemn->idbois] )}} title="Supprimer" type="button" class="btn btn-danger"  data-toggle="modal"> Supprimer
-                                                    </a>
                                                     <!--href = {{action('Bois\BoisController@update',['id'=>$lemn->idbois])}}-->
                                                     <a href = {{action('Bois\BoisController@update',['id'=>$lemn->idbois])}} title="Modifier" class="btn btn-warning">
                                                         Modifier
+                                                    </a>
+                                                    <a href={{action('Bois\BoisController@delete', ['id'=>$lemn->idbois] )}} title="Supprimer" type="button" class="btn btn-danger" > Supprimer
                                                     </a>
                                                 </td>
                                             </tr>
@@ -180,12 +180,12 @@
                                                 <td>{{$lemn->diametre}}</td>
                                                 <td>{{$lemn->prixunite}}</td>
                                                 <td>
-                                                    <a href={{action('Bois\BoisController@delete', ['id'=>$lemn->idbois] )}} title="Supprimer" type="button" class="btn btn-danger"  data-toggle="modal">
-                                                        Supprimer
-                                                    </a>
                                                     <!--href = {{action('Bois\BoisController@update',['id'=>$lemn->idbois])}}-->
                                                     <a href = {{action('Bois\BoisController@update',['id'=>$lemn->idbois])}} title="Modifier" class="btn btn-warning">
                                                         Modifier
+                                                    </a>
+                                                     <a href={{action('Bois\BoisController@delete', ['id'=>$lemn->idbois] )}} title="Supprimer" type="button" class="btn btn-danger">
+                                                        Supprimer
                                                     </a>
                                                 </td>
                                             </tr>

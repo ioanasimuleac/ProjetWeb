@@ -88,56 +88,18 @@
             <!-- /.navbar-static-side -->
         </nav>
 
-        <div id="page-wrapper">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1 class="page-header">Les demandes</h1>
-                </div>
-            </div>
-            <div class = "row">
-                <div class="col-lg-6">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            Demandes
-                        </div>
-                        <!-- /.panel-heading -->
-                        <div class = "panel-body">
-                            <div class="panel-body">
-                                <div class="table-responsive">
-                                    <table class="table">
-                                        <thead>
-                                            <tr>
-                                                <th>Nom entreprise</th>
-                                                <th>Type de bois</th>
-                                                <th>Quantité</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            @foreach($demandes as $d)
-                                                <input type = "hidden" value = >
-                                                <tr>
-                                                    <td>{{$d->nomentreprise}}</td>
-                                                    <td>{{$d->nomtypebois}}</td>
-                                                    <td>{{$d->quantite}}</td>
-                                                </tr>
-                                            @endforeach
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                            
-                        </div>
-                    <!-- /.panel -->
+        <div class = "containter">
+            <div id="page-wrapper">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="page-header">Les demandes</h1>
                     </div>
                 </div>
-                <div class = "col-lg-6">
-                    
-                </div>
                 <div class = "row">
-                    <div class = "col-lg-12">
+                    <div class="col-lg-6">
                         <div class="panel panel-default">
                             <div class="panel-heading">
-                                Detailles
+                                Demandes
                             </div>
                             <!-- /.panel-heading -->
                             <div class = "panel-body">
@@ -147,24 +109,17 @@
                                             <thead>
                                                 <tr>
                                                     <th>Nom entreprise</th>
-                                                    <th>Rue pour l'entreprise</th>
-                                                    <th>Code postale</th>
-                                                    <th>Nom Representant</th>
-                                                    <th>Prenom Representant</th>
-                                                    <th>Email</th>
-                                                    <th>telephone</th>
+                                                    <th>Type de bois</th>
+                                                    <th>Quantité</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                @foreach($detalii as $de)
+                                                @foreach($demandes as $d)
+                                                    <input type = "hidden" value = >
                                                     <tr>
-                                                        <td>{{$de->nomentreprise}}</td>
-                                                        <td>{{$de->rueentreprise}}</td>
-                                                        <td>{{$de->codeentreprise}}</td>
-                                                        <td>{{$de->nomrep}}</td>
-                                                        <td>{{$de->prenomrep}}</td>
-                                                        <td>{{$de->email}}</td>
-                                                        <td>{{$de->telephone}}</td>
+                                                        <td>{{$d->nomentreprise}}</td>
+                                                        <td>{{$d->nomtypebois}}</td>
+                                                        <td>{{$d->quantite}}</td>
                                                     </tr>
                                                 @endforeach
                                             </tbody>
@@ -176,10 +131,56 @@
                         <!-- /.panel -->
                         </div>
                     </div>
+                    <div class = "col-lg-6">
+                        
+                    </div>
+                    <div class = "row">
+                        <div class = "col-lg-12">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    Detailles
+                                </div>
+                                <!-- /.panel-heading -->
+                                <div class = "panel-body">
+                                    <div class="panel-body">
+                                        <div class="table-responsive">
+                                            <table class="table">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Nom entreprise</th>
+                                                        <th>Rue pour l'entreprise</th>
+                                                        <th>Code postale</th>
+                                                        <th>Nom Representant</th>
+                                                        <th>Prenom Representant</th>
+                                                        <th>Email</th>
+                                                        <th>telephone</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    @foreach($detalii as $de)
+                                                        <tr>
+                                                            <td>{{$de->nomentreprise}}</td>
+                                                            <td>{{$de->rueentreprise}}</td>
+                                                            <td>{{$de->codeentreprise}}</td>
+                                                            <td>{{$de->nomrep}}</td>
+                                                            <td>{{$de->prenomrep}}</td>
+                                                            <td>{{$de->email}}</td>
+                                                            <td>{{$de->telephone}}</td>
+                                                        </tr>
+                                                    @endforeach
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            <!-- /.panel -->
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        <!-- /#page-wrapper -->
-
+            <!-- /#page-wrapper -->
+        </div>
     </div>
     <!-- /#wrapper -->
 
