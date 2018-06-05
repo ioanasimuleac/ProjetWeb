@@ -17,8 +17,26 @@
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet" type="text/css">
 
+    <link href="../dist/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../dist/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="../dist/metisMenu/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../dist/css/sb-admin-2.css" rel="stylesheet">
+    <link href="../dist/css/style.css" rel="stylesheet">
+
+    <!-- Morris Charts CSS -->
+    <link href="../dist/morrisjs/morris.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="../dist/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
+    
 </head>
 <body>
     <div id="app">

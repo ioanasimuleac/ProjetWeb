@@ -70,7 +70,7 @@ class DemanderController{
 		//dd($str);
 		$newrep = new Representant(NULL, NULL,NULL, $str, NULL);
 		$rep = $newrep->readItem();
-		return view('Demander\update', ['entreprise' => $entr, 'representant' =>$rep, 'demander' => $dem]);
+		return view('Demander/update', ['entreprise' => $entr, 'representant' =>$rep, 'demander' => $dem]);
 	}
 	public function updated(Request $r){
 		//dd($r);
