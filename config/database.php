@@ -1,10 +1,10 @@
 <?php
 $url = parse_url(getenv("DATABASE_URL"));
 
-$host = $url["DB_HOST"];
-$username = $url["DB_USERNAME"];
-$password = $url["DB_PASSWORD"];
-$database = substr($url["DB_DATABASE"], 1);
+$host = $url["host"];
+$username = $url["user"];
+$password = $url["pass"];
+$database = substr($url["path"], 1);
 
 return [
 
@@ -20,7 +20,7 @@ return [
     */
     'fetch' => PDO::FETCH_CLASS,
 
-    'default' => env('DATABASE_URL', 'pgsql'),
+    'default' => env('DB_CONNECTION', 'pgsql'),
 
     /*
     |--------------------------------------------------------------------------
@@ -42,11 +42,11 @@ return [
 
         'pgsql' => [
             'driver' => 'pgsql',
-            'host' => env('DB_HOST','ec2-79-125-117-53.eu-west-1.compute.amazonaws.com'),
+            'host' => $host,
             'port' => env('DB_PORT', '5432'),
-            'database' => env('DB_DATABASE','df37eqr9a7ckit'),
-            'username' => env('DB_USERNAME', 'tixvhtndhkvsae'),
-            'password' => env('DB_PASSWORD', '9890c80a20528a1af5f4045b1435e26bd02a9fcf3060ae8616fc06033ed8ee67'),
+            'database' => $database,
+            'username' => $username,
+            'password' => $password,
             'charset' => 'utf8',
             'prefix' => '',
             'schema' => 'public',
@@ -77,15 +77,14 @@ return [
     | such as APC or Memcached. Laravel makes it easy to dig right in.
     |
     */
-
     'redis' => [
 
-        'client' => 'predis',
+        'cluster' => false,
 
         'default' => [
-            'host' => env('REDIS_HOST', 'ec2-34-247-153-234.eu-west-1.compute.amazonaws.com'),
-            'password' => env('REDIS_PASSWORD', 'padd7a9dfdf259678b669d827ce8c2e0109bd93ef8f9925c9a79eaec0712cf3db'),
-            'port' => env('REDIS_PORT', 11309),
+            'host' => env('REDIS_HOST', 'localhost'),
+            'password' => env('REDIS_PASSWORD', null),
+            'port' => env('REDIS_PORT', 6379),
             'database' => 0,
         ],
 
