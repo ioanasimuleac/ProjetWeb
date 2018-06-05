@@ -16,14 +16,14 @@ class BoisController{
 		if(Auth::check()){
 			$foc = Bois::read1();
 			$munca = Bois::read2();
-			return view('Bois\listBois', ['foc' => $foc, 'munca' =>$munca]);
+			return view('Bois/listBois', ['foc' => $foc, 'munca' =>$munca]);
 		}else{return redirect()->route('login');}
 
 	}
 	public function readVisitor(Request $r){
 		$foc = Bois::read1();
 		$munca = Bois::read2();
-		return view('Bois\listBoisVisitor', ['foc' => $foc, 'munca' =>$munca]);
+		return view('Bois/listBoisVisitor', ['foc' => $foc, 'munca' =>$munca]);
 	}
 
 	public function create(){
