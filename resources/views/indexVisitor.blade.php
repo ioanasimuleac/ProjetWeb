@@ -35,7 +35,7 @@
             <nav class="navbar navbar-default">
                   <div class="container-fluid">
                     <div class="navbar-header">
-                      <a class="navbar-brand"  href = {{action('HomeController@index')}}>RomSilva</a>
+                      <a class="navbar-brand"  href = {{action('HomeController@indexVisitor')}}>RomSilva</a>
                     </div>
                     <ul class="nav navbar-nav">
                       <li class="active"><a href="#">A propos de nous</a></li>

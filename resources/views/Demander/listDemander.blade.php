@@ -56,7 +56,7 @@
         </nav>
     </div>
         
-        <div class = "containter">
+        <div class = "containerr">
             <div id="page-wrapper">
                 <div class="row">
                     <div class="col-lg-12">
