@@ -15,12 +15,12 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <link href="../dist/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../dist/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!--link href="../dist/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="../dist/metisMenu/metisMenu.min.css" rel="stylesheet">
     <link href="../dist/css/sb-admin-2.css" rel="stylesheet">
     <link href="../dist/morrisjs/morris.css" rel="stylesheet">
     <link href="../dist/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="../dist/css/style.css" rel="stylesheet"-->
 
 </head>
 
@@ -73,13 +73,13 @@
                 <div class="sidebar-nav navbar-collapse">
                     <ul class="nav" id="side-menu">
                         <li>
-                            <a href = {{action('Bois\BoisController@read')}}><i class="fa fa-dashboard fa-fw"></i> Les offres</a>
+                            <a href = {{action('Bois\BoisController@read')}}> Les offres</a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-table fa-fw"></i> Les demandes </a>
+                            <a href="#"> Les demandes </a>
                         </li>
                         <li>
-                            <a href= {{action('EventsController@events')}}><i class="fa fa-edit fa-fw"></i> Evenements </a>
+                            <a href= {{action('EventsController@events')}}> Evenements </a>
                         </li>
                     </ul>
                 </div>

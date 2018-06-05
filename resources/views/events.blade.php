@@ -16,21 +16,13 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     
-    <link href="../dist/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../dist/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- MetisMenu CSS -->
+     <!-- Bootstrap Core CSS -->
+    <!--link href="../dist/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="../dist/metisMenu/metisMenu.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
     <link href="../dist/css/sb-admin-2.css" rel="stylesheet">
-    <link href="../dist/css/style.css" rel="stylesheet">
-
-    <!-- Morris Charts CSS -->
     <link href="../dist/morrisjs/morris.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
     <link href="../dist/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="../dist/css/style.css" rel="stylesheet"-->
 
 </head>
 
@@ -84,13 +76,13 @@
                 <div class="sidebar-nav navbar-collapse">
                     <ul class="nav" id="side-menu">
                         <li>
-                            <a  href= {{action('Bois\BoisController@read')}}><i class="fa fa-table fa-fw"></i> Les offerts </a>
+                            <a  href= {{action('Bois\BoisController@read')}}> Les offerts </a>
                         </li>
                         <li>
-                            <a href ={{action('Demander\DemanderController@readAll')}}><i class="fa fa-dashboard fa-fw"></i> Les demandes</a>
+                            <a href ={{action('Demander\DemanderController@readAll')}}> Les demandes</a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-edit fa-fw"></i> Evenements </a>
+                            <a href="#"> Evenements </a>
                         </li>
                     </ul>
                 </div>
@@ -142,13 +134,13 @@
                 <div class="row">
                     <div class = "col-lg-6">
                         <figure>
-                            <img src="https://www.google.fr/search?biw=1536&bih=734&tbm=isch&sa=1&ei=-akWW_tcxofoBN21l4AG&q=TH%26F+Expozitie+pentru+v%C3%A2n%C4%83toare%2C+pescuit+sportiv+si+activit%C4%83ti+outdoor+de+agrement+si+sporturi+extreme&oq=TH%26F+Expozitie+pentru+v%C3%A2n%C4%83toare%2C+pescuit+sportiv+si+activit%C4%83ti+outdoor+de+agrement+si+sporturi+extreme&gs_l=img.3..0i30k1l2j0i8i30k1l8.16116.16978.0.17435.2.2.0.0.0.0.112.112.0j1.1.0..1..0...1c.1.64.img..1.1.111....0.GEi1hzCZQFA#imgrc=dz2OZvPW3RLWnM:" class ="img-responsive" class="img-thumbnail" alt="Cinque Terre" width="304" height="236" alt="TH&F Expozitie pentru vânătoare, pescuit sportiv si activităti outdoor de agrement si sporturi extreme.">
+                            <img src="http://transilvaniahuntingandfishing.ro/wp-content/uploads/2017/03/1-1.jpg" class ="img-responsive" class="img-thumbnail" alt="Cinque Terre" width="304" height="236" alt="TH&F Expozitie pentru vânătoare, pescuit sportiv si activităti outdoor de agrement si sporturi extreme.">
                             <figcaption><strong>TH&F Exposition pour la chasse, la pêche sportive et pour les activités récréatives en plein air et pour les sports extrêmes.</strong></figcaption>
                         </figure>
                     </div>
                     <div class= "col-lg-6">
                         <figure>
-                            <img src="https://www.google.fr/search?biw=1536&bih=734&tbm=isch&sa=1&ei=q6gWW_r2BeWL6ATazqCIBQ&q=Th%C3%A8me+2018+%3A+%C2%AB+For%C3%AAts+et+villes+durables+%C2%BB&oq=Th%C3%A8me+2018+%3A+%C2%AB+For%C3%AAts+et+villes+durables+%C2%BB&gs_l=img.3...237142.238711.0.238890.4.3.1.0.0.0.102.190.1j1.2.0....0...1c.1.64.img..1.0.0.0...0.r_hbvj6C_Dk#imgrc=aDfcRS5t-0hgVM:" class ="img-responsive" class="img-thumbnail" alt="Cinque Terre" width="304" height="236" alt="Thème 2018 : « Forêts et villes durables »">
+                            <img src="http://www.journee-internationale-des-forets.fr/images/actualites/Banniere_JIF_2018.png" class ="img-responsive" class="img-thumbnail" alt="Cinque Terre" width="304" height="236" alt="Thème 2018 : « Forêts et villes durables »">
                             <figcaption><strong>Thème 2018 : « Forêts et villes durables »</strong></figcaption>
                         </figure>
                     </div>

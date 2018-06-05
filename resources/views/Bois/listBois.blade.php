@@ -16,12 +16,12 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
     <!-- Bootstrap Core CSS -->
-    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+    <!--link href="../dist/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../dist/metisMenu/metisMenu.min.css" rel="stylesheet">
     <link href="../dist/css/sb-admin-2.css" rel="stylesheet">
-    <link href="../vendor/morrisjs/morris.css" rel="stylesheet">
-    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
+    <link href="../dist/morrisjs/morris.css" rel="stylesheet">
+    <link href="../dist/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="../dist/css/style.css" rel="stylesheet"-->
 </head>
 
 <body>
@@ -76,13 +76,13 @@
                 <div class="sidebar-nav navbar-collapse">
                     <ul class="nav" id="side-menu">
                         <li>
-                            <a href="#"><i class="fa fa-table fa-fw"></i> Les offerts </a>
+                            <a href="#"> Les offerts </a>
                         </li>
                         <li>
-                            <a href = {{action('Demander\DemanderController@readAll')}}><i class="fa fa-dashboard fa-fw"></i>Les demandes</a>
+                            <a href = {{action('Demander\DemanderController@readAll')}}> Les demandes</a>
                         </li>
                         <li>
-                            <a href= {{action('EventsController@events')}}><i class="fa fa-edit fa-fw"></i> Evenements </a>
+                            <a href= {{action('EventsController@events')}}> Evenements </a>
                         </li>
                     </ul>
                 </div>
@@ -135,12 +135,11 @@
                                                 <td>{{$lemn->diametre}}</td>
                                                 <td>{{$lemn->prixunite}}</td>
                                                 <td>
-                                                     <a href={{action('Bois\BoisController@delete', ['id'=>$lemn->idbois] )}} title="Supprimer" type="button" class="btn btn-danger"  data-toggle="modal">
-                                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                                     <a href={{action('Bois\BoisController@delete', ['id'=>$lemn->idbois] )}} title="Supprimer" type="button" class="btn btn-danger"  data-toggle="modal"> Supprimer
                                                     </a>
                                                     <!--href = {{action('Bois\BoisController@update',['id'=>$lemn->idbois])}}-->
                                                     <a href = {{action('Bois\BoisController@update',['id'=>$lemn->idbois])}} title="Modifier" class="btn btn-warning">
-                                                        <i class="text-white fa fa-pencil-square-o" aria-hidden="true"></i>
+                                                        Modifier
                                                     </a>
                                                 </td>
                                             </tr>
@@ -182,11 +181,11 @@
                                                 <td>{{$lemn->prixunite}}</td>
                                                 <td>
                                                     <a href={{action('Bois\BoisController@delete', ['id'=>$lemn->idbois] )}} title="Supprimer" type="button" class="btn btn-danger"  data-toggle="modal">
-                                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                                        Supprimer
                                                     </a>
                                                     <!--href = {{action('Bois\BoisController@update',['id'=>$lemn->idbois])}}-->
                                                     <a href = {{action('Bois\BoisController@update',['id'=>$lemn->idbois])}} title="Modifier" class="btn btn-warning">
-                                                        <i class="text-white fa fa-pencil-square-o" aria-hidden="true"></i>
+                                                        Modifier
                                                     </a>
                                                 </td>
                                             </tr>

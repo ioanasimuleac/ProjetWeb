@@ -16,12 +16,12 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
     <!-- Bootstrap Core CSS -->
-    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+    <!--link href="../dist/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../dist/metisMenu/metisMenu.min.css" rel="stylesheet">
     <link href="../dist/css/sb-admin-2.css" rel="stylesheet">
-    <link href="../vendor/morrisjs/morris.css" rel="stylesheet">
-    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="../dist/css/style.css" rel="stylesheet">
+    <link href="../dist/morrisjs/morris.css" rel="stylesheet">
+    <link href="../dist/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="../dist/css/style.css" rel="stylesheet"-->
 </head>
 
 <body>
