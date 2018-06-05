@@ -37,7 +37,7 @@
                 </div>
                 <ul class="nav navbar-nav">
                     <li><a href = {{action('HomeController@indexVisitor')}}> A propos de nous</a></li>
-                    <li><a href = "#"> Les offres</a>
+                    <li class = "active"><a href = "#"> Les offres</a>
                     <li><a href= {{action('EventsController@eventsVisitor')}}> Evenements </a>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
