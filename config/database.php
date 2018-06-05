@@ -83,9 +83,9 @@ return [
         'client' => 'predis',
 
         'default' => [
-            'host' => env('REDIS_HOST', '127.0.0.1'),
-            'password' => env('REDIS_PASSWORD', null),
-            'port' => env('REDIS_PORT', 6379),
+            'host' => env('REDIS_HOST', 'ec2-34-247-153-234.eu-west-1.compute.amazonaws.com'),
+            'password' => env('REDIS_PASSWORD', 'padd7a9dfdf259678b669d827ce8c2e0109bd93ef8f9925c9a79eaec0712cf3db'),
+            'port' => env('REDIS_PORT', 11309),
             'database' => 0,
         ],
 
