@@ -28,7 +28,7 @@ class BoisController{
 
 	public function create(){
 		if(Auth::check()){
-			return view('Bois\createBois');
+			return view('Bois/createBois');
 		}else{return redirect()->route('login');}
 	}
 	public function created(Request $r){
@@ -45,7 +45,7 @@ class BoisController{
 				}
 				$offre = new Bois(NULL, $nomBois, $volumBois, $diametreBois, $prixunite, $typeBois);
 				$offre->create();
-				return view('Bois\createdBois');
+				return view('Bois/createdBois');
 			}else{
 				var_dump('EROARE');
 			}
@@ -70,7 +70,7 @@ class BoisController{
 			if(is_null($id) == false){
 				$up = new Bois($id, NULL, NULL, NULL,NULL,NULL);
 				$element = $up->readItem();
-				return view('Bois\updateBois',['item'=> $element]);
+				return view('Bois/updateBois',['item'=> $element]);
 			} else{var_dump("eroare!");}
 		}else{return redirect()->route('login');}
 	}

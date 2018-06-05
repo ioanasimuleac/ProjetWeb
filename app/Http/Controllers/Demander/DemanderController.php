@@ -17,12 +17,12 @@ class DemanderController{
 			$all = $demande ->readThemAll();
 			$detalii = $demande->detaliu();
 			//dd($detalii);
-			return view('Demander\listDemander', ['demandes' => $all, 'detalii' => $detalii]);
+			return view('Demander/listDemander', ['demandes' => $all, 'detalii' => $detalii]);
 		}else{return route('login');}
 	}
 
 	public function create(){
-		return view('Demander\create');
+		return view('Demander/create');
 	}
 
 	public function created(Request $r){
@@ -56,7 +56,7 @@ class DemanderController{
 		$newDemande->create();
 		$stuff = array($nomRep,$prenomRep, $emailRep, $telephone,$nomEntre, $rue, $ville,$code,$type , $quantite);
 		#dd($stuff);
-		return view('Demander\created', ['afisaj'=>$stuff]);
+		return view('Demander/created', ['afisaj'=>$stuff]);
 
 	}
 
@@ -116,7 +116,7 @@ class DemanderController{
 		$newDemande->create();
 		$stuff = array($nomRep,$prenomRep, $emailRep, $telephone,$nomEntre, $rue, $ville,$code,$type , $quantite);
 		
-		return view('Demander\updated');
+		return view('Demander/updated');
 	}
 
 	public function delete($id){
